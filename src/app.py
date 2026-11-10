@@ -456,14 +456,14 @@ def server(input, output, session):
         if len(dff) == 0:
             fig = go.FigureWidget()
             fig.update_layout(
-                mapbox_style="open-street-map",
-                mapbox_center={"lat": 49.25, "lon": -123.1207},
+                map_style="open-street-map",
+                map_center={"lat": 49.25, "lon": -123.1207},
                 margin=dict(l=0, r=0, t=0, b=0),
                 height=600
             )
             return fig
 
-        fig = px.scatter_mapbox(
+        fig = px.scatter_map(
             dff,
             lat="latitude",
             lon="longitude",
@@ -477,8 +477,8 @@ def server(input, output, session):
             zoom=11
         )
         fig.update_layout(
-            mapbox_style="open-street-map",
-            mapbox_center={"lat": 49.25, "lon": -123.1207},
+            map_style="open-street-map",
+            map_center={"lat": 49.25, "lon": -123.1207},
             margin=dict(l=0, r=0, t=0, b=0),
             height=600
         )
