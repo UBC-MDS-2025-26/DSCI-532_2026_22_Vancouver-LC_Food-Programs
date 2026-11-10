@@ -16,3 +16,4 @@ querychat
 pyarrow
 duckdb
 ibis-framework[duckdb]
+anthropic

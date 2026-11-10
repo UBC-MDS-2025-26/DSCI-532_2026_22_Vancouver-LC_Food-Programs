@@ -52,8 +52,7 @@ area_choices = sorted([
 
 # Provide full df to querychat
 df = table.execute()
-qc = QueryChat(df, "food_programs", client="openai/gpt-4.1")
-
+qc = QueryChat(df, "food_programs", client="anthropic/claude-sonnet-5-5")
 app_ui = ui.page_fillable(
 #    ui.tags.link(href="styles.css", rel="stylesheet"),
 
